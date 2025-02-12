@@ -58,6 +58,24 @@ Three things are under Git's control:
 1. Object database recording history of project development, where the project is modeled with a tree of files.
 2. **Index**, recording your plans for the *future*.
 
+USES:
+backup - for whenever you need to upload a pre existing version of your code because of possible bugs in current version
+To understand why some code is written the way it is. - can look at old versions of code to understand why something is implemented the way it is.
+
+GIT:
+1. Object database (repos)itory
+
+   a. persistent objects (lives in secondary storage) so objects can be larger but also takes more time to access. Saves objects unlike c++
+
+   b. atomic updates to collection of objects.  Either updates it fully or not at all. prevents corrupted files
+3. index (catch) records (plans for) furuter
+
+   a. create commits
+
+   b. manages merges
+
+   c. cache data
+   
 The `git commit` command *appends the index to the history*.
 
 
